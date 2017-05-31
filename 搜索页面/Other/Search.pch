@@ -1,0 +1,27 @@
+//
+//  Search.pch
+//  搜索页面
+//
+//  Created by 李自杨 on 2017/5/10.
+//  Copyright © 2017年 View. All rights reserved.
+//
+
+#ifndef Search_pch
+#define Search_pch
+
+// 定义这个常量，就可以不用在开发过程中使用"mas_"前缀。
+#define MAS_SHORTHAND
+// 定义这个常量，就可以让Masonry帮我们自动把基础数据类型的数据，自动装箱为对象类型。
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+
+#define KWidth self.view.bounds.size.width
+#define KHeight self.view.bounds.size.height
+
+#define LZYWeakSelf __weak __typeof(self) weakSelf = self
+
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define C1 RGBACOLOR(245, 245, 245, 1)
+
+#endif /* Search_pch */
